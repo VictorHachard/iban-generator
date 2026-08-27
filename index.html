@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Générateur d'IBAN valides, gratuit et sans pub | 27 pays UE</title>
+<meta name="description" content="Générez des IBAN valides (clé de contrôle mod 97) pour les 27 pays de l'Union européenne : un IBAN ou une liste, copie en un clic, export CSV. Sans pub, sans inscription.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0b0d10">
+
+<link rel="alternate" hreflang="fr" href="./">
+<link rel="alternate" hreflang="en" href="en/">
+<link rel="alternate" hreflang="de" href="de/">
+<link rel="alternate" hreflang="es" href="es/">
+<link rel="alternate" hreflang="it" href="it/">
+<link rel="alternate" hreflang="pt" href="pt/">
+<link rel="alternate" hreflang="nl" href="nl/">
+<link rel="alternate" hreflang="pl" href="pl/">
+<link rel="alternate" hreflang="ro" href="ro/">
+<link rel="alternate" hreflang="el" href="el/">
+<link rel="alternate" hreflang="sv" href="sv/">
+<link rel="alternate" hreflang="da" href="da/">
+<link rel="alternate" hreflang="fi" href="fi/">
+<link rel="alternate" hreflang="cs" href="cs/">
+<link rel="alternate" hreflang="sk" href="sk/">
+<link rel="alternate" hreflang="hu" href="hu/">
+<link rel="alternate" hreflang="bg" href="bg/">
+<link rel="alternate" hreflang="hr" href="hr/">
+<link rel="alternate" hreflang="sl" href="sl/">
+<link rel="alternate" hreflang="et" href="et/">
+<link rel="alternate" hreflang="lv" href="lv/">
+<link rel="alternate" hreflang="lt" href="lt/">
+<link rel="alternate" hreflang="ga" href="ga/">
+<link rel="alternate" hreflang="mt" href="mt/">
+<link rel="alternate" hreflang="x-default" href="en/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="IBAN Generator">
+<meta property="og:locale" content="fr">
+<meta property="og:title" content="Générateur d'IBAN valides, gratuit et sans pub | 27 pays UE">
+<meta property="og:description" content="Générez des IBAN valides (clé de contrôle mod 97) pour les 27 pays de l'Union européenne : un IBAN ou une liste, copie en un clic, export CSV. Sans pub, sans inscription.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Générateur d'IBAN valides, gratuit et sans pub | 27 pays UE">
+<meta name="twitter:description" content="Générez des IBAN valides (clé de contrôle mod 97) pour les 27 pays de l'Union européenne : un IBAN ou une liste, copie en un clic, export CSV. Sans pub, sans inscription.">
+
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#127974;</text></svg>">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "IBAN Generator",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "fr",
+      "description": "Générez des IBAN valides (clé de contrôle mod 97) pour les 27 pays de l'Union européenne : un IBAN ou une liste, copie en un clic, export CSV. Sans pub, sans inscription.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Les IBAN générés sont-ils valides ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, structurellement. Chaque IBAN respecte le format national du pays choisi (ISO 13616), sa clé de contrôle internationale (ISO 7064, mod 97-10) et, pour la Belgique, l'Espagne, la France, l'Italie, le Portugal, la Finlande, la Slovénie et l'Estonie, la clé de contrôle nationale."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Correspondent-ils à de vrais comptes bancaires ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Le code banque est réel pour que le format soit réaliste, mais le numéro de compte est aléatoire. Aucun virement ne peut aboutir vers un IBAN généré ici."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "À quoi sert un générateur d'IBAN ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "À tester : formulaires de paiement, règles de validation, imports de fichiers SEPA, jeux de données de démonstration ou de recette. Utiliser un IBAN généré pour tromper quelqu'un est une fraude, et c'est illégal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mes données sont-elles envoyées quelque part ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Tout le calcul se fait dans votre navigateur, en JavaScript. Aucun serveur, aucun traceur, aucune publicité, aucune inscription."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien d'IBAN peut-on générer d'un coup ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jusqu'à 1000 par lot, exportables en TXT ou en CSV avec le pays et la banque."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="wrap">
+
+  <div class="topbar">
+    <label class="langpick">
+      <span>Langue</span>
+      <select id="lang"><option value="cs/">Čeština</option><option value="da/">Dansk</option><option value="de/">Deutsch</option><option value="et/">Eesti</option><option value="en/">English</option><option value="es/">Español</option><option value="./" selected>Français</option><option value="ga/">Gaeilge</option><option value="hr/">Hrvatski</option><option value="it/">Italiano</option><option value="lv/">Latviešu</option><option value="lt/">Lietuvių</option><option value="hu/">Magyar</option><option value="mt/">Malti</option><option value="nl/">Nederlands</option><option value="pl/">Polski</option><option value="pt/">Português</option><option value="ro/">Română</option><option value="sk/">Slovenčina</option><option value="sl/">Slovenščina</option><option value="fi/">Suomi</option><option value="sv/">Svenska</option><option value="el/">Ελληνικά</option><option value="bg/">Български</option></select>
+    </label>
+  </div>
+
+  <header class="head">
+    <h1>Générateur d'IBAN</h1>
+    <p class="sub">IBAN structurellement valides (clé de contrôle mod 97) pour les 27 pays de l'Union européenne. Pas de pub, pas de compte, pas de paiement.</p>
+  </header>
+
+  <section class="panel" aria-label="Comment ça marche">
+    <div class="controls">
+      <label class="field field-grow">
+        <span>Pays</span>
+        <select id="country"></select>
+      </label>
+
+      <label class="field field-qty">
+        <span>Quantité</span>
+        <input id="count" type="number" min="1" max="1000" value="1" inputmode="numeric">
+      </label>
+
+      <button id="generate" class="btn btn-main" type="button">Générer</button>
+    </div>
+
+    <div class="quick" id="quick">
+      <span>Rapide :</span>
+      <button type="button" data-n="1">1</button>
+      <button type="button" data-n="10">10</button>
+      <button type="button" data-n="50">50</button>
+      <button type="button" data-n="100">100</button>
+      <button type="button" data-n="500">500</button>
+    </div>
+  </section>
+
+  <section class="panel out" id="out" aria-live="polite" hidden>
+    <div class="out-head">
+      <div class="out-meta" id="outMeta"></div>
+      <div class="out-actions">
+        <button type="button" class="btn" id="copyAll">Tout copier</button>
+        <button type="button" class="btn" id="dlTxt">.txt</button>
+        <button type="button" class="btn" id="dlCsv">.csv</button>
+      </div>
+    </div>
+    <div id="single" class="single" hidden>
+      <button type="button" class="iban-big" id="ibanBig" title="Cliquer pour copier"></button>
+      <div class="detail" id="detail"></div>
+    </div>
+    <ol id="list" class="list" hidden></ol>
+  </section>
+
+  <section class="info">
+    <h2>Comment ça marche</h2>
+    <p>Choisissez un pays (celui détecté depuis votre navigateur est présélectionné), indiquez une quantité, puis cliquez sur Générer. Chaque IBAN est construit selon le format national du pays (longueur, code banque, code guichet, numéro de compte), puis les clés de contrôle sont calculées : la clé nationale quand le pays en utilise une, et la clé IBAN internationale (ISO 7064, mod 97-10). Le résultat passe les validateurs d'IBAN.</p>
+    <p>Les codes banque utilisés sont des codes réels : BNP Paribas, ING, Santander, Rabobank, UniCredit, Deutsche Bank. Cela donne à l'IBAN une allure crédible. Le numéro de compte, lui, est tiré au hasard : aucun IBAN généré ne correspond à un compte existant.</p>
+
+    <h2>Les 27 pays de l'Union européenne</h2>
+    <p>Chaque pays a sa propre longueur d'IBAN et sa propre structure de compte :</p>
+    <ul class="countries">
+      <li><b>🇩🇪 Allemagne</b><span>DE &middot; 22 caractères</span></li>
+      <li><b>🇦🇹 Autriche</b><span>AT &middot; 20 caractères</span></li>
+      <li><b>🇧🇪 Belgique</b><span>BE &middot; 16 caractères</span></li>
+      <li><b>🇧🇬 Bulgarie</b><span>BG &middot; 22 caractères</span></li>
+      <li><b>🇨🇾 Chypre</b><span>CY &middot; 28 caractères</span></li>
+      <li><b>🇭🇷 Croatie</b><span>HR &middot; 21 caractères</span></li>
+      <li><b>🇩🇰 Danemark</b><span>DK &middot; 18 caractères</span></li>
+      <li><b>🇪🇸 Espagne</b><span>ES &middot; 24 caractères</span></li>
+      <li><b>🇪🇪 Estonie</b><span>EE &middot; 20 caractères</span></li>
+      <li><b>🇫🇮 Finlande</b><span>FI &middot; 18 caractères</span></li>
+      <li><b>🇫🇷 France</b><span>FR &middot; 27 caractères</span></li>
+      <li><b>🇬🇷 Grèce</b><span>GR &middot; 27 caractères</span></li>
+      <li><b>🇭🇺 Hongrie</b><span>HU &middot; 28 caractères</span></li>
+      <li><b>🇮🇪 Irlande</b><span>IE &middot; 22 caractères</span></li>
+      <li><b>🇮🇹 Italie</b><span>IT &middot; 27 caractères</span></li>
+      <li><b>🇱🇻 Lettonie</b><span>LV &middot; 21 caractères</span></li>
+      <li><b>🇱🇹 Lituanie</b><span>LT &middot; 20 caractères</span></li>
+      <li><b>🇱🇺 Luxembourg</b><span>LU &middot; 20 caractères</span></li>
+      <li><b>🇲🇹 Malte</b><span>MT &middot; 31 caractères</span></li>
+      <li><b>🇳🇱 Pays-Bas</b><span>NL &middot; 18 caractères</span></li>
+      <li><b>🇵🇱 Pologne</b><span>PL &middot; 28 caractères</span></li>
+      <li><b>🇵🇹 Portugal</b><span>PT &middot; 25 caractères</span></li>
+      <li><b>🇷🇴 Roumanie</b><span>RO &middot; 24 caractères</span></li>
+      <li><b>🇸🇰 Slovaquie</b><span>SK &middot; 24 caractères</span></li>
+      <li><b>🇸🇮 Slovénie</b><span>SI &middot; 19 caractères</span></li>
+      <li><b>🇸🇪 Suède</b><span>SE &middot; 24 caractères</span></li>
+      <li><b>🇨🇿 Tchéquie</b><span>CZ &middot; 24 caractères</span></li>
+    </ul>
+
+    <h2>Questions fréquentes</h2>
+    <h3>Les IBAN générés sont-ils valides ?</h3>
+    <p>Oui, structurellement. Chaque IBAN respecte le format national du pays choisi (ISO 13616), sa clé de contrôle internationale (ISO 7064, mod 97-10) et, pour la Belgique, l'Espagne, la France, l'Italie, le Portugal, la Finlande, la Slovénie et l'Estonie, la clé de contrôle nationale.</p>
+    <h3>Correspondent-ils à de vrais comptes bancaires ?</h3>
+    <p>Non. Le code banque est réel pour que le format soit réaliste, mais le numéro de compte est aléatoire. Aucun virement ne peut aboutir vers un IBAN généré ici.</p>
+    <h3>À quoi sert un générateur d'IBAN ?</h3>
+    <p>À tester : formulaires de paiement, règles de validation, imports de fichiers SEPA, jeux de données de démonstration ou de recette. Utiliser un IBAN généré pour tromper quelqu'un est une fraude, et c'est illégal.</p>
+    <h3>Mes données sont-elles envoyées quelque part ?</h3>
+    <p>Non. Tout le calcul se fait dans votre navigateur, en JavaScript. Aucun serveur, aucun traceur, aucune publicité, aucune inscription.</p>
+    <h3>Combien d'IBAN peut-on générer d'un coup ?</h3>
+    <p>Jusqu'à 1000 par lot, exportables en TXT ou en CSV avec le pays et la banque.</p>
+  </section>
+
+  <footer class="foot">
+    <p><strong>Avertissement :</strong> les IBAN générés respectent le format national et la clé de contrôle, mais ne correspondent à aucun compte bancaire réel. Toute utilisation frauduleuse est illégale.</p>
+    <p class="tiny">Tout est calculé dans votre navigateur. Aucune donnée n'est envoyée nulle part. <a id="src" href="#" hidden>Code source</a></p>
+    <nav class="langs" aria-label="Autres langues">
+      <span>Autres langues :</span> <a href="cs/" hreflang="cs">Čeština</a> · <a href="da/" hreflang="da">Dansk</a> · <a href="de/" hreflang="de">Deutsch</a> · <a href="et/" hreflang="et">Eesti</a> · <a href="en/" hreflang="en">English</a> · <a href="es/" hreflang="es">Español</a> · <a href="ga/" hreflang="ga">Gaeilge</a> · <a href="hr/" hreflang="hr">Hrvatski</a> · <a href="it/" hreflang="it">Italiano</a> · <a href="lv/" hreflang="lv">Latviešu</a> · <a href="lt/" hreflang="lt">Lietuvių</a> · <a href="hu/" hreflang="hu">Magyar</a> · <a href="mt/" hreflang="mt">Malti</a> · <a href="nl/" hreflang="nl">Nederlands</a> · <a href="pl/" hreflang="pl">Polski</a> · <a href="pt/" hreflang="pt">Português</a> · <a href="ro/" hreflang="ro">Română</a> · <a href="sk/" hreflang="sk">Slovenčina</a> · <a href="sl/" hreflang="sl">Slovenščina</a> · <a href="fi/" hreflang="fi">Suomi</a> · <a href="sv/" hreflang="sv">Svenska</a> · <a href="el/" hreflang="el">Ελληνικά</a> · <a href="bg/" hreflang="bg">Български</a>
+    </nav>
+  </footer>
+
+</main>
+<div id="toast" class="toast" hidden></div>
+<script>window.__I18N={"lang":"fr","t":{"btnCopyAll":"Tout copier","btnCopyAllDone":"Copié ✓","btnCopy":"copier","btnCopyDone":"copié ✓","msgCopied":"IBAN copié","msgCopiedMany":"{n} IBAN copiés","msgTxt":"Fichier .txt téléchargé","msgCsv":"Fichier .csv téléchargé","msgCopyFail":"Copie impossible","meta":"{n} IBAN, {country}, {len} caractères, clé de contrôle valide","detCountry":"Pays","detBank":"Banque","detKey":"Clé IBAN"},"countries":{"AT":"Autriche","BE":"Belgique","BG":"Bulgarie","HR":"Croatie","CY":"Chypre","CZ":"Tchéquie","DK":"Danemark","EE":"Estonie","FI":"Finlande","FR":"France","DE":"Allemagne","GR":"Grèce","HU":"Hongrie","IE":"Irlande","IT":"Italie","LV":"Lettonie","LT":"Lituanie","LU":"Luxembourg","MT":"Malte","NL":"Pays-Bas","PL":"Pologne","PT":"Portugal","RO":"Roumanie","SK":"Slovaquie","SI":"Slovénie","ES":"Espagne","SE":"Suède"}}</script>
+<script src="assets/iban.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

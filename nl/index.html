@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gratis IBAN-generator zonder reclame | 27 EU-landen</title>
+<meta name="description" content="Genereer geldige IBANs (controlegetal mod 97) voor alle 27 landen van de Europese Unie: één IBAN of een lijst, kopiëren met één klik, CSV-export. Zonder reclame, zonder account.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0b0d10">
+
+<link rel="alternate" hreflang="fr" href=".././">
+<link rel="alternate" hreflang="en" href="../en/">
+<link rel="alternate" hreflang="de" href="../de/">
+<link rel="alternate" hreflang="es" href="../es/">
+<link rel="alternate" hreflang="it" href="../it/">
+<link rel="alternate" hreflang="pt" href="../pt/">
+<link rel="alternate" hreflang="nl" href="../nl/">
+<link rel="alternate" hreflang="pl" href="../pl/">
+<link rel="alternate" hreflang="ro" href="../ro/">
+<link rel="alternate" hreflang="el" href="../el/">
+<link rel="alternate" hreflang="sv" href="../sv/">
+<link rel="alternate" hreflang="da" href="../da/">
+<link rel="alternate" hreflang="fi" href="../fi/">
+<link rel="alternate" hreflang="cs" href="../cs/">
+<link rel="alternate" hreflang="sk" href="../sk/">
+<link rel="alternate" hreflang="hu" href="../hu/">
+<link rel="alternate" hreflang="bg" href="../bg/">
+<link rel="alternate" hreflang="hr" href="../hr/">
+<link rel="alternate" hreflang="sl" href="../sl/">
+<link rel="alternate" hreflang="et" href="../et/">
+<link rel="alternate" hreflang="lv" href="../lv/">
+<link rel="alternate" hreflang="lt" href="../lt/">
+<link rel="alternate" hreflang="ga" href="../ga/">
+<link rel="alternate" hreflang="mt" href="../mt/">
+<link rel="alternate" hreflang="x-default" href="../en/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="IBAN Generator">
+<meta property="og:locale" content="nl">
+<meta property="og:title" content="Gratis IBAN-generator zonder reclame | 27 EU-landen">
+<meta property="og:description" content="Genereer geldige IBANs (controlegetal mod 97) voor alle 27 landen van de Europese Unie: één IBAN of een lijst, kopiëren met één klik, CSV-export. Zonder reclame, zonder account.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Gratis IBAN-generator zonder reclame | 27 EU-landen">
+<meta name="twitter:description" content="Genereer geldige IBANs (controlegetal mod 97) voor alle 27 landen van de Europese Unie: één IBAN of een lijst, kopiëren met één klik, CSV-export. Zonder reclame, zonder account.">
+
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#127974;</text></svg>">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "IBAN Generator",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "nl",
+      "description": "Genereer geldige IBANs (controlegetal mod 97) voor alle 27 landen van de Europese Unie: één IBAN of een lijst, kopiëren met één klik, CSV-export. Zonder reclame, zonder account.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Zijn de gegenereerde IBANs geldig?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, structureel. Elke IBAN volgt het nationale formaat van het gekozen land (ISO 13616), het internationale controlegetal (ISO 7064, mod 97-10) en, voor België, Spanje, Frankrijk, Italië, Portugal, Finland, Slovenië en Estland, het nationale controlegetal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Horen ze bij echte bankrekeningen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nee. De bankcode is echt zodat het formaat realistisch oogt, maar het rekeningnummer is willekeurig. Geen enkele overboeking kan een hier gegenereerde IBAN bereiken."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Waar dient een IBAN-generator voor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Voor testen: betaalformulieren, validatieregels, SEPA-bestandsimports, demo- of acceptatiedata. Een gegenereerde IBAN gebruiken om iemand te misleiden is fraude en strafbaar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Worden mijn gegevens ergens naartoe gestuurd?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nee. Alles wordt in uw browser berekend, in JavaScript. Geen server, geen tracker, geen reclame, geen registratie."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hoeveel IBANs kan ik in één keer genereren?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tot 1000 per keer, te exporteren als TXT of CSV met het land en de bank."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="wrap">
+
+  <div class="topbar">
+    <label class="langpick">
+      <span>Taal</span>
+      <select id="lang"><option value="../cs/">Čeština</option><option value="../da/">Dansk</option><option value="../de/">Deutsch</option><option value="../et/">Eesti</option><option value="../en/">English</option><option value="../es/">Español</option><option value=".././">Français</option><option value="../ga/">Gaeilge</option><option value="../hr/">Hrvatski</option><option value="../it/">Italiano</option><option value="../lv/">Latviešu</option><option value="../lt/">Lietuvių</option><option value="../hu/">Magyar</option><option value="../mt/">Malti</option><option value="../nl/" selected>Nederlands</option><option value="../pl/">Polski</option><option value="../pt/">Português</option><option value="../ro/">Română</option><option value="../sk/">Slovenčina</option><option value="../sl/">Slovenščina</option><option value="../fi/">Suomi</option><option value="../sv/">Svenska</option><option value="../el/">Ελληνικά</option><option value="../bg/">Български</option></select>
+    </label>
+  </div>
+
+  <header class="head">
+    <h1>IBAN-generator</h1>
+    <p class="sub">Structureel geldige IBANs (controlegetal mod 97) voor de 27 landen van de Europese Unie. Geen reclame, geen account, geen betaling.</p>
+  </header>
+
+  <section class="panel" aria-label="Hoe het werkt">
+    <div class="controls">
+      <label class="field field-grow">
+        <span>Land</span>
+        <select id="country"></select>
+      </label>
+
+      <label class="field field-qty">
+        <span>Aantal</span>
+        <input id="count" type="number" min="1" max="1000" value="1" inputmode="numeric">
+      </label>
+
+      <button id="generate" class="btn btn-main" type="button">Genereren</button>
+    </div>
+
+    <div class="quick" id="quick">
+      <span>Snel:</span>
+      <button type="button" data-n="1">1</button>
+      <button type="button" data-n="10">10</button>
+      <button type="button" data-n="50">50</button>
+      <button type="button" data-n="100">100</button>
+      <button type="button" data-n="500">500</button>
+    </div>
+  </section>
+
+  <section class="panel out" id="out" aria-live="polite" hidden>
+    <div class="out-head">
+      <div class="out-meta" id="outMeta"></div>
+      <div class="out-actions">
+        <button type="button" class="btn" id="copyAll">Alles kopiëren</button>
+        <button type="button" class="btn" id="dlTxt">.txt</button>
+        <button type="button" class="btn" id="dlCsv">.csv</button>
+      </div>
+    </div>
+    <div id="single" class="single" hidden>
+      <button type="button" class="iban-big" id="ibanBig" title="Klik om te kopiëren"></button>
+      <div class="detail" id="detail"></div>
+    </div>
+    <ol id="list" class="list" hidden></ol>
+  </section>
+
+  <section class="info">
+    <h2>Hoe het werkt</h2>
+    <p>Kies een land (het land dat uit uw browser is afgeleid, staat al ingesteld), geef een aantal op en klik op Genereren. Elke IBAN wordt opgebouwd volgens het nationale formaat van dat land (lengte, bankcode, kantoorcode, rekeningnummer); daarna worden de controlegetallen berekend: het nationale, als het land er een gebruikt, en het internationale IBAN-controlegetal (ISO 7064, mod 97-10). Het resultaat komt door IBAN-validators.</p>
+    <p>De gebruikte bankcodes zijn echt: BNP Paribas, ING, Santander, Rabobank, UniCredit, Deutsche Bank. Daardoor oogt de IBAN geloofwaardig. Het rekeningnummer is echter willekeurig: geen enkele gegenereerde IBAN hoort bij een bestaande rekening.</p>
+
+    <h2>De 27 landen van de Europese Unie</h2>
+    <p>Elk land heeft zijn eigen IBAN-lengte en rekeningstructuur:</p>
+    <ul class="countries">
+      <li><b>🇧🇪 België</b><span>BE &middot; 16 tekens</span></li>
+      <li><b>🇧🇬 Bulgarije</b><span>BG &middot; 22 tekens</span></li>
+      <li><b>🇨🇾 Cyprus</b><span>CY &middot; 28 tekens</span></li>
+      <li><b>🇩🇰 Denemarken</b><span>DK &middot; 18 tekens</span></li>
+      <li><b>🇩🇪 Duitsland</b><span>DE &middot; 22 tekens</span></li>
+      <li><b>🇪🇪 Estland</b><span>EE &middot; 20 tekens</span></li>
+      <li><b>🇫🇮 Finland</b><span>FI &middot; 18 tekens</span></li>
+      <li><b>🇫🇷 Frankrijk</b><span>FR &middot; 27 tekens</span></li>
+      <li><b>🇬🇷 Griekenland</b><span>GR &middot; 27 tekens</span></li>
+      <li><b>🇭🇺 Hongarije</b><span>HU &middot; 28 tekens</span></li>
+      <li><b>🇮🇪 Ierland</b><span>IE &middot; 22 tekens</span></li>
+      <li><b>🇮🇹 Italië</b><span>IT &middot; 27 tekens</span></li>
+      <li><b>🇭🇷 Kroatië</b><span>HR &middot; 21 tekens</span></li>
+      <li><b>🇱🇻 Letland</b><span>LV &middot; 21 tekens</span></li>
+      <li><b>🇱🇹 Litouwen</b><span>LT &middot; 20 tekens</span></li>
+      <li><b>🇱🇺 Luxemburg</b><span>LU &middot; 20 tekens</span></li>
+      <li><b>🇲🇹 Malta</b><span>MT &middot; 31 tekens</span></li>
+      <li><b>🇳🇱 Nederland</b><span>NL &middot; 18 tekens</span></li>
+      <li><b>🇦🇹 Oostenrijk</b><span>AT &middot; 20 tekens</span></li>
+      <li><b>🇵🇱 Polen</b><span>PL &middot; 28 tekens</span></li>
+      <li><b>🇵🇹 Portugal</b><span>PT &middot; 25 tekens</span></li>
+      <li><b>🇷🇴 Roemenië</b><span>RO &middot; 24 tekens</span></li>
+      <li><b>🇸🇮 Slovenië</b><span>SI &middot; 19 tekens</span></li>
+      <li><b>🇸🇰 Slowakije</b><span>SK &middot; 24 tekens</span></li>
+      <li><b>🇪🇸 Spanje</b><span>ES &middot; 24 tekens</span></li>
+      <li><b>🇨🇿 Tsjechië</b><span>CZ &middot; 24 tekens</span></li>
+      <li><b>🇸🇪 Zweden</b><span>SE &middot; 24 tekens</span></li>
+    </ul>
+
+    <h2>Veelgestelde vragen</h2>
+    <h3>Zijn de gegenereerde IBANs geldig?</h3>
+    <p>Ja, structureel. Elke IBAN volgt het nationale formaat van het gekozen land (ISO 13616), het internationale controlegetal (ISO 7064, mod 97-10) en, voor België, Spanje, Frankrijk, Italië, Portugal, Finland, Slovenië en Estland, het nationale controlegetal.</p>
+    <h3>Horen ze bij echte bankrekeningen?</h3>
+    <p>Nee. De bankcode is echt zodat het formaat realistisch oogt, maar het rekeningnummer is willekeurig. Geen enkele overboeking kan een hier gegenereerde IBAN bereiken.</p>
+    <h3>Waar dient een IBAN-generator voor?</h3>
+    <p>Voor testen: betaalformulieren, validatieregels, SEPA-bestandsimports, demo- of acceptatiedata. Een gegenereerde IBAN gebruiken om iemand te misleiden is fraude en strafbaar.</p>
+    <h3>Worden mijn gegevens ergens naartoe gestuurd?</h3>
+    <p>Nee. Alles wordt in uw browser berekend, in JavaScript. Geen server, geen tracker, geen reclame, geen registratie.</p>
+    <h3>Hoeveel IBANs kan ik in één keer genereren?</h3>
+    <p>Tot 1000 per keer, te exporteren als TXT of CSV met het land en de bank.</p>
+  </section>
+
+  <footer class="foot">
+    <p><strong>Waarschuwing:</strong> de gegenereerde IBANs volgen het nationale formaat en het controlegetal, maar horen bij geen enkele echte bankrekening. Frauduleus gebruik is strafbaar.</p>
+    <p class="tiny">Alles wordt in uw browser berekend. Er worden geen gegevens verzonden. <a id="src" href="#" hidden>Broncode</a></p>
+    <nav class="langs" aria-label="Andere talen">
+      <span>Andere talen :</span> <a href="../cs/" hreflang="cs">Čeština</a> · <a href="../da/" hreflang="da">Dansk</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../et/" hreflang="et">Eesti</a> · <a href="../en/" hreflang="en">English</a> · <a href="../es/" hreflang="es">Español</a> · <a href=".././" hreflang="fr">Français</a> · <a href="../ga/" hreflang="ga">Gaeilge</a> · <a href="../hr/" hreflang="hr">Hrvatski</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../lv/" hreflang="lv">Latviešu</a> · <a href="../lt/" hreflang="lt">Lietuvių</a> · <a href="../hu/" hreflang="hu">Magyar</a> · <a href="../mt/" hreflang="mt">Malti</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt">Português</a> · <a href="../ro/" hreflang="ro">Română</a> · <a href="../sk/" hreflang="sk">Slovenčina</a> · <a href="../sl/" hreflang="sl">Slovenščina</a> · <a href="../fi/" hreflang="fi">Suomi</a> · <a href="../sv/" hreflang="sv">Svenska</a> · <a href="../el/" hreflang="el">Ελληνικά</a> · <a href="../bg/" hreflang="bg">Български</a>
+    </nav>
+  </footer>
+
+</main>
+<div id="toast" class="toast" hidden></div>
+<script>window.__I18N={"lang":"nl","t":{"btnCopyAll":"Alles kopiëren","btnCopyAllDone":"Gekopieerd ✓","btnCopy":"kopiëren","btnCopyDone":"gekopieerd ✓","msgCopied":"IBAN gekopieerd","msgCopiedMany":"{n} IBANs gekopieerd","msgTxt":"Bestand .txt gedownload","msgCsv":"Bestand .csv gedownload","msgCopyFail":"Kopiëren mislukt","meta":"{n} IBAN, {country}, {len} tekens, geldig controlegetal","detCountry":"Land","detBank":"Bank","detKey":"IBAN-controlegetal"},"countries":{"AT":"Oostenrijk","BE":"België","BG":"Bulgarije","HR":"Kroatië","CY":"Cyprus","CZ":"Tsjechië","DK":"Denemarken","EE":"Estland","FI":"Finland","FR":"Frankrijk","DE":"Duitsland","GR":"Griekenland","HU":"Hongarije","IE":"Ierland","IT":"Italië","LV":"Letland","LT":"Litouwen","LU":"Luxemburg","MT":"Malta","NL":"Nederland","PL":"Polen","PT":"Portugal","RO":"Roemenië","SK":"Slowakije","SI":"Slovenië","ES":"Spanje","SE":"Zweden"}}</script>
+<script src="../assets/iban.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

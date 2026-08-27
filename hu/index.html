@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingyenes IBAN-generátor, reklám nélkül | 27 EU-ország</title>
+<meta name="description" content="Készítsen érvényes IBAN-számokat (mod 97 ellenőrző számjegyek) az Európai Unió mind a 27 országához: egy IBAN vagy egy lista, másolás egy kattintással, CSV-export. Reklám és regisztráció nélkül.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0b0d10">
+
+<link rel="alternate" hreflang="fr" href=".././">
+<link rel="alternate" hreflang="en" href="../en/">
+<link rel="alternate" hreflang="de" href="../de/">
+<link rel="alternate" hreflang="es" href="../es/">
+<link rel="alternate" hreflang="it" href="../it/">
+<link rel="alternate" hreflang="pt" href="../pt/">
+<link rel="alternate" hreflang="nl" href="../nl/">
+<link rel="alternate" hreflang="pl" href="../pl/">
+<link rel="alternate" hreflang="ro" href="../ro/">
+<link rel="alternate" hreflang="el" href="../el/">
+<link rel="alternate" hreflang="sv" href="../sv/">
+<link rel="alternate" hreflang="da" href="../da/">
+<link rel="alternate" hreflang="fi" href="../fi/">
+<link rel="alternate" hreflang="cs" href="../cs/">
+<link rel="alternate" hreflang="sk" href="../sk/">
+<link rel="alternate" hreflang="hu" href="../hu/">
+<link rel="alternate" hreflang="bg" href="../bg/">
+<link rel="alternate" hreflang="hr" href="../hr/">
+<link rel="alternate" hreflang="sl" href="../sl/">
+<link rel="alternate" hreflang="et" href="../et/">
+<link rel="alternate" hreflang="lv" href="../lv/">
+<link rel="alternate" hreflang="lt" href="../lt/">
+<link rel="alternate" hreflang="ga" href="../ga/">
+<link rel="alternate" hreflang="mt" href="../mt/">
+<link rel="alternate" hreflang="x-default" href="../en/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="IBAN Generator">
+<meta property="og:locale" content="hu">
+<meta property="og:title" content="Ingyenes IBAN-generátor, reklám nélkül | 27 EU-ország">
+<meta property="og:description" content="Készítsen érvényes IBAN-számokat (mod 97 ellenőrző számjegyek) az Európai Unió mind a 27 országához: egy IBAN vagy egy lista, másolás egy kattintással, CSV-export. Reklám és regisztráció nélkül.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ingyenes IBAN-generátor, reklám nélkül | 27 EU-ország">
+<meta name="twitter:description" content="Készítsen érvényes IBAN-számokat (mod 97 ellenőrző számjegyek) az Európai Unió mind a 27 országához: egy IBAN vagy egy lista, másolás egy kattintással, CSV-export. Reklám és regisztráció nélkül.">
+
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#127974;</text></svg>">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "IBAN Generator",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "hu",
+      "description": "Készítsen érvényes IBAN-számokat (mod 97 ellenőrző számjegyek) az Európai Unió mind a 27 országához: egy IBAN vagy egy lista, másolás egy kattintással, CSV-export. Reklám és regisztráció nélkül.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Érvényesek a generált IBAN-számok?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Igen, szerkezetileg. Minden IBAN megfelel a választott ország nemzeti formátumának (ISO 13616), a nemzetközi ellenőrző számjegyeknek (ISO 7064, mod 97-10), Belgium, Spanyolország, Franciaország, Olaszország, Portugália, Finnország, Szlovénia és Észtország esetében pedig a nemzeti ellenőrző számjegyeknek is."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Valódi bankszámlákhoz tartoznak?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nem. A bankkód valódi, hogy a formátum élethű legyen, de a számlaszám véletlenszerű. Semmilyen átutalás nem érkezhet meg egy itt generált IBAN-ra."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mire jó egy IBAN-generátor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tesztelésre: fizetési űrlapok, ellenőrzési szabályok, SEPA-fájlimportok, bemutató vagy tesztadatok. Generált IBAN-t megtévesztésre használni csalás, és jogellenes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Elküldik valahová az adataimat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nem. Minden számítás a böngészőjében történik, JavaScriptben. Nincs szerver, nincs nyomkövetés, nincs reklám, nincs regisztráció."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hány IBAN generálható egyszerre?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Legfeljebb 1000 egy menetben, TXT vagy CSV formátumban exportálva, az országgal és a bankkal együtt."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="wrap">
+
+  <div class="topbar">
+    <label class="langpick">
+      <span>Nyelv</span>
+      <select id="lang"><option value="../cs/">Čeština</option><option value="../da/">Dansk</option><option value="../de/">Deutsch</option><option value="../et/">Eesti</option><option value="../en/">English</option><option value="../es/">Español</option><option value=".././">Français</option><option value="../ga/">Gaeilge</option><option value="../hr/">Hrvatski</option><option value="../it/">Italiano</option><option value="../lv/">Latviešu</option><option value="../lt/">Lietuvių</option><option value="../hu/" selected>Magyar</option><option value="../mt/">Malti</option><option value="../nl/">Nederlands</option><option value="../pl/">Polski</option><option value="../pt/">Português</option><option value="../ro/">Română</option><option value="../sk/">Slovenčina</option><option value="../sl/">Slovenščina</option><option value="../fi/">Suomi</option><option value="../sv/">Svenska</option><option value="../el/">Ελληνικά</option><option value="../bg/">Български</option></select>
+    </label>
+  </div>
+
+  <header class="head">
+    <h1>IBAN-generátor</h1>
+    <p class="sub">Szerkezetileg érvényes IBAN-számok (mod 97 ellenőrző számjegyek) az Európai Unió 27 országához. Nincs reklám, nincs fiók, nincs fizetés.</p>
+  </header>
+
+  <section class="panel" aria-label="Hogyan működik">
+    <div class="controls">
+      <label class="field field-grow">
+        <span>Ország</span>
+        <select id="country"></select>
+      </label>
+
+      <label class="field field-qty">
+        <span>Mennyiség</span>
+        <input id="count" type="number" min="1" max="1000" value="1" inputmode="numeric">
+      </label>
+
+      <button id="generate" class="btn btn-main" type="button">Generálás</button>
+    </div>
+
+    <div class="quick" id="quick">
+      <span>Gyorsan:</span>
+      <button type="button" data-n="1">1</button>
+      <button type="button" data-n="10">10</button>
+      <button type="button" data-n="50">50</button>
+      <button type="button" data-n="100">100</button>
+      <button type="button" data-n="500">500</button>
+    </div>
+  </section>
+
+  <section class="panel out" id="out" aria-live="polite" hidden>
+    <div class="out-head">
+      <div class="out-meta" id="outMeta"></div>
+      <div class="out-actions">
+        <button type="button" class="btn" id="copyAll">Összes másolása</button>
+        <button type="button" class="btn" id="dlTxt">.txt</button>
+        <button type="button" class="btn" id="dlCsv">.csv</button>
+      </div>
+    </div>
+    <div id="single" class="single" hidden>
+      <button type="button" class="iban-big" id="ibanBig" title="Kattintson a másoláshoz"></button>
+      <div class="detail" id="detail"></div>
+    </div>
+    <ol id="list" class="list" hidden></ol>
+  </section>
+
+  <section class="info">
+    <h2>Hogyan működik</h2>
+    <p>Válasszon országot (a böngészőből felismert ország az alapértelmezett), adja meg a mennyiséget, majd kattintson a Generálás gombra. Minden IBAN az adott ország nemzeti formátuma szerint épül fel (hossz, bankkód, fiókkód, számlaszám), majd kiszámoljuk az ellenőrző számjegyeket: a nemzetit, ha az ország használ ilyet, és az IBAN nemzetközi ellenőrző számjegyeit (ISO 7064, mod 97-10). Az eredmény átmegy az IBAN-ellenőrzőkön.</p>
+    <p>A használt bankkódok valódiak: BNP Paribas, ING, Santander, Rabobank, UniCredit, Deutsche Bank. Ettől hiteles a formátum. A számlaszám viszont véletlenszerű: egyetlen generált IBAN sem tartozik létező számlához.</p>
+
+    <h2>Az Európai Unió 27 országa</h2>
+    <p>Minden országnak saját IBAN-hossza és saját számlaszerkezete van:</p>
+    <ul class="countries">
+      <li><b>🇦🇹 Ausztria</b><span>AT &middot; 20 karakter</span></li>
+      <li><b>🇧🇪 Belgium</b><span>BE &middot; 16 karakter</span></li>
+      <li><b>🇧🇬 Bulgária</b><span>BG &middot; 22 karakter</span></li>
+      <li><b>🇨🇾 Ciprus</b><span>CY &middot; 28 karakter</span></li>
+      <li><b>🇨🇿 Csehország</b><span>CZ &middot; 24 karakter</span></li>
+      <li><b>🇩🇰 Dánia</b><span>DK &middot; 18 karakter</span></li>
+      <li><b>🇪🇪 Észtország</b><span>EE &middot; 20 karakter</span></li>
+      <li><b>🇫🇮 Finnország</b><span>FI &middot; 18 karakter</span></li>
+      <li><b>🇫🇷 Franciaország</b><span>FR &middot; 27 karakter</span></li>
+      <li><b>🇬🇷 Görögország</b><span>GR &middot; 27 karakter</span></li>
+      <li><b>🇳🇱 Hollandia</b><span>NL &middot; 18 karakter</span></li>
+      <li><b>🇭🇷 Horvátország</b><span>HR &middot; 21 karakter</span></li>
+      <li><b>🇮🇪 Írország</b><span>IE &middot; 22 karakter</span></li>
+      <li><b>🇵🇱 Lengyelország</b><span>PL &middot; 28 karakter</span></li>
+      <li><b>🇱🇻 Lettország</b><span>LV &middot; 21 karakter</span></li>
+      <li><b>🇱🇹 Litvánia</b><span>LT &middot; 20 karakter</span></li>
+      <li><b>🇱🇺 Luxemburg</b><span>LU &middot; 20 karakter</span></li>
+      <li><b>🇭🇺 Magyarország</b><span>HU &middot; 28 karakter</span></li>
+      <li><b>🇲🇹 Málta</b><span>MT &middot; 31 karakter</span></li>
+      <li><b>🇩🇪 Németország</b><span>DE &middot; 22 karakter</span></li>
+      <li><b>🇮🇹 Olaszország</b><span>IT &middot; 27 karakter</span></li>
+      <li><b>🇵🇹 Portugália</b><span>PT &middot; 25 karakter</span></li>
+      <li><b>🇷🇴 Románia</b><span>RO &middot; 24 karakter</span></li>
+      <li><b>🇪🇸 Spanyolország</b><span>ES &middot; 24 karakter</span></li>
+      <li><b>🇸🇪 Svédország</b><span>SE &middot; 24 karakter</span></li>
+      <li><b>🇸🇰 Szlovákia</b><span>SK &middot; 24 karakter</span></li>
+      <li><b>🇸🇮 Szlovénia</b><span>SI &middot; 19 karakter</span></li>
+    </ul>
+
+    <h2>Gyakori kérdések</h2>
+    <h3>Érvényesek a generált IBAN-számok?</h3>
+    <p>Igen, szerkezetileg. Minden IBAN megfelel a választott ország nemzeti formátumának (ISO 13616), a nemzetközi ellenőrző számjegyeknek (ISO 7064, mod 97-10), Belgium, Spanyolország, Franciaország, Olaszország, Portugália, Finnország, Szlovénia és Észtország esetében pedig a nemzeti ellenőrző számjegyeknek is.</p>
+    <h3>Valódi bankszámlákhoz tartoznak?</h3>
+    <p>Nem. A bankkód valódi, hogy a formátum élethű legyen, de a számlaszám véletlenszerű. Semmilyen átutalás nem érkezhet meg egy itt generált IBAN-ra.</p>
+    <h3>Mire jó egy IBAN-generátor?</h3>
+    <p>Tesztelésre: fizetési űrlapok, ellenőrzési szabályok, SEPA-fájlimportok, bemutató vagy tesztadatok. Generált IBAN-t megtévesztésre használni csalás, és jogellenes.</p>
+    <h3>Elküldik valahová az adataimat?</h3>
+    <p>Nem. Minden számítás a böngészőjében történik, JavaScriptben. Nincs szerver, nincs nyomkövetés, nincs reklám, nincs regisztráció.</p>
+    <h3>Hány IBAN generálható egyszerre?</h3>
+    <p>Legfeljebb 1000 egy menetben, TXT vagy CSV formátumban exportálva, az országgal és a bankkal együtt.</p>
+  </section>
+
+  <footer class="foot">
+    <p><strong>Figyelmeztetés:</strong> a generált IBAN-számok megfelelnek a nemzeti formátumnak és az ellenőrző számjegyeknek, de egyetlen valódi bankszámlának sem felelnek meg. Minden csalárd felhasználás jogellenes.</p>
+    <p class="tiny">Minden számítás a böngészőjében történik. Semmilyen adat nem kerül elküldésre. <a id="src" href="#" hidden>Forráskód</a></p>
+    <nav class="langs" aria-label="Más nyelvek">
+      <span>Más nyelvek :</span> <a href="../cs/" hreflang="cs">Čeština</a> · <a href="../da/" hreflang="da">Dansk</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../et/" hreflang="et">Eesti</a> · <a href="../en/" hreflang="en">English</a> · <a href="../es/" hreflang="es">Español</a> · <a href=".././" hreflang="fr">Français</a> · <a href="../ga/" hreflang="ga">Gaeilge</a> · <a href="../hr/" hreflang="hr">Hrvatski</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../lv/" hreflang="lv">Latviešu</a> · <a href="../lt/" hreflang="lt">Lietuvių</a> · <a href="../mt/" hreflang="mt">Malti</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt">Português</a> · <a href="../ro/" hreflang="ro">Română</a> · <a href="../sk/" hreflang="sk">Slovenčina</a> · <a href="../sl/" hreflang="sl">Slovenščina</a> · <a href="../fi/" hreflang="fi">Suomi</a> · <a href="../sv/" hreflang="sv">Svenska</a> · <a href="../el/" hreflang="el">Ελληνικά</a> · <a href="../bg/" hreflang="bg">Български</a>
+    </nav>
+  </footer>
+
+</main>
+<div id="toast" class="toast" hidden></div>
+<script>window.__I18N={"lang":"hu","t":{"btnCopyAll":"Összes másolása","btnCopyAllDone":"Másolva ✓","btnCopy":"másolás","btnCopyDone":"másolva ✓","msgCopied":"IBAN másolva","msgCopiedMany":"{n} IBAN másolva","msgTxt":"A .txt fájl letöltve","msgCsv":"A .csv fájl letöltve","msgCopyFail":"A másolás nem sikerült","meta":"{n} IBAN, {country}, {len} karakter, érvényes ellenőrző számjegyek","detCountry":"Ország","detBank":"Bank","detKey":"IBAN ellenőrző számjegyek"},"countries":{"AT":"Ausztria","BE":"Belgium","BG":"Bulgária","HR":"Horvátország","CY":"Ciprus","CZ":"Csehország","DK":"Dánia","EE":"Észtország","FI":"Finnország","FR":"Franciaország","DE":"Németország","GR":"Görögország","HU":"Magyarország","IE":"Írország","IT":"Olaszország","LV":"Lettország","LT":"Litvánia","LU":"Luxemburg","MT":"Málta","NL":"Hollandia","PL":"Lengyelország","PT":"Portugália","RO":"Románia","SK":"Szlovákia","SI":"Szlovénia","ES":"Spanyolország","SE":"Svédország"}}</script>
+<script src="../assets/iban.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

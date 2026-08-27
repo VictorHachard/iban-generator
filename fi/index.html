@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ilmainen IBAN-generaattori ilman mainoksia | 27 EU-maata</title>
+<meta name="description" content="Luo kelvollisia IBAN-tilinumeroita (tarkiste mod 97) EU:n kaikkiin 27 maahan: yksi IBAN tai lista, kopiointi yhdellä klikkauksella, CSV-vienti. Ei mainoksia, ei rekisteröitymistä.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0b0d10">
+
+<link rel="alternate" hreflang="fr" href=".././">
+<link rel="alternate" hreflang="en" href="../en/">
+<link rel="alternate" hreflang="de" href="../de/">
+<link rel="alternate" hreflang="es" href="../es/">
+<link rel="alternate" hreflang="it" href="../it/">
+<link rel="alternate" hreflang="pt" href="../pt/">
+<link rel="alternate" hreflang="nl" href="../nl/">
+<link rel="alternate" hreflang="pl" href="../pl/">
+<link rel="alternate" hreflang="ro" href="../ro/">
+<link rel="alternate" hreflang="el" href="../el/">
+<link rel="alternate" hreflang="sv" href="../sv/">
+<link rel="alternate" hreflang="da" href="../da/">
+<link rel="alternate" hreflang="fi" href="../fi/">
+<link rel="alternate" hreflang="cs" href="../cs/">
+<link rel="alternate" hreflang="sk" href="../sk/">
+<link rel="alternate" hreflang="hu" href="../hu/">
+<link rel="alternate" hreflang="bg" href="../bg/">
+<link rel="alternate" hreflang="hr" href="../hr/">
+<link rel="alternate" hreflang="sl" href="../sl/">
+<link rel="alternate" hreflang="et" href="../et/">
+<link rel="alternate" hreflang="lv" href="../lv/">
+<link rel="alternate" hreflang="lt" href="../lt/">
+<link rel="alternate" hreflang="ga" href="../ga/">
+<link rel="alternate" hreflang="mt" href="../mt/">
+<link rel="alternate" hreflang="x-default" href="../en/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="IBAN Generator">
+<meta property="og:locale" content="fi">
+<meta property="og:title" content="Ilmainen IBAN-generaattori ilman mainoksia | 27 EU-maata">
+<meta property="og:description" content="Luo kelvollisia IBAN-tilinumeroita (tarkiste mod 97) EU:n kaikkiin 27 maahan: yksi IBAN tai lista, kopiointi yhdellä klikkauksella, CSV-vienti. Ei mainoksia, ei rekisteröitymistä.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ilmainen IBAN-generaattori ilman mainoksia | 27 EU-maata">
+<meta name="twitter:description" content="Luo kelvollisia IBAN-tilinumeroita (tarkiste mod 97) EU:n kaikkiin 27 maahan: yksi IBAN tai lista, kopiointi yhdellä klikkauksella, CSV-vienti. Ei mainoksia, ei rekisteröitymistä.">
+
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#127974;</text></svg>">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "IBAN Generator",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "fi",
+      "description": "Luo kelvollisia IBAN-tilinumeroita (tarkiste mod 97) EU:n kaikkiin 27 maahan: yksi IBAN tai lista, kopiointi yhdellä klikkauksella, CSV-vienti. Ei mainoksia, ei rekisteröitymistä.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Ovatko luodut IBANit kelvollisia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kyllä, rakenteeltaan. Jokainen IBAN noudattaa valitun maan kansallista muotoa (ISO 13616), kansainvälistä tarkistetta (ISO 7064, mod 97-10) sekä Belgian, Espanjan, Ranskan, Italian, Portugalin, Suomen, Slovenian ja Viron osalta myös kansallista tarkistetta."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vastaavatko ne oikeita pankkitilejä?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Eivät. Pankin tunnus on aito, jotta muoto näyttää uskottavalta, mutta tilinumero on satunnainen. Mikään tilisiirto ei voi päätyä täällä luotuun IBANiin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mihin IBAN-generaattoria tarvitaan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Testaamiseen: maksulomakkeet, validointisäännöt, SEPA-tiedostojen tuonnit, demo- tai testiaineistot. Luodun IBANin käyttäminen jonkun harhauttamiseen on petos ja laitonta."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Lähetetäänkö tietojani jonnekin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ei. Kaikki lasketaan selaimessasi JavaScriptillä. Ei palvelinta, ei seurantaa, ei mainoksia, ei rekisteröitymistä."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kuinka monta IBANia voi luoda kerralla?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enintään 1000 kerrallaan, vietävissä TXT- tai CSV-muotoon maan ja pankin kanssa."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="wrap">
+
+  <div class="topbar">
+    <label class="langpick">
+      <span>Kieli</span>
+      <select id="lang"><option value="../cs/">Čeština</option><option value="../da/">Dansk</option><option value="../de/">Deutsch</option><option value="../et/">Eesti</option><option value="../en/">English</option><option value="../es/">Español</option><option value=".././">Français</option><option value="../ga/">Gaeilge</option><option value="../hr/">Hrvatski</option><option value="../it/">Italiano</option><option value="../lv/">Latviešu</option><option value="../lt/">Lietuvių</option><option value="../hu/">Magyar</option><option value="../mt/">Malti</option><option value="../nl/">Nederlands</option><option value="../pl/">Polski</option><option value="../pt/">Português</option><option value="../ro/">Română</option><option value="../sk/">Slovenčina</option><option value="../sl/">Slovenščina</option><option value="../fi/" selected>Suomi</option><option value="../sv/">Svenska</option><option value="../el/">Ελληνικά</option><option value="../bg/">Български</option></select>
+    </label>
+  </div>
+
+  <header class="head">
+    <h1>IBAN-generaattori</h1>
+    <p class="sub">Rakenteeltaan kelvollisia IBAN-tilinumeroita (tarkiste mod 97) Euroopan unionin 27 maahan. Ei mainoksia, ei tiliä, ei maksuja.</p>
+  </header>
+
+  <section class="panel" aria-label="Näin se toimii">
+    <div class="controls">
+      <label class="field field-grow">
+        <span>Maa</span>
+        <select id="country"></select>
+      </label>
+
+      <label class="field field-qty">
+        <span>Määrä</span>
+        <input id="count" type="number" min="1" max="1000" value="1" inputmode="numeric">
+      </label>
+
+      <button id="generate" class="btn btn-main" type="button">Luo</button>
+    </div>
+
+    <div class="quick" id="quick">
+      <span>Pikavalinta:</span>
+      <button type="button" data-n="1">1</button>
+      <button type="button" data-n="10">10</button>
+      <button type="button" data-n="50">50</button>
+      <button type="button" data-n="100">100</button>
+      <button type="button" data-n="500">500</button>
+    </div>
+  </section>
+
+  <section class="panel out" id="out" aria-live="polite" hidden>
+    <div class="out-head">
+      <div class="out-meta" id="outMeta"></div>
+      <div class="out-actions">
+        <button type="button" class="btn" id="copyAll">Kopioi kaikki</button>
+        <button type="button" class="btn" id="dlTxt">.txt</button>
+        <button type="button" class="btn" id="dlCsv">.csv</button>
+      </div>
+    </div>
+    <div id="single" class="single" hidden>
+      <button type="button" class="iban-big" id="ibanBig" title="Kopioi klikkaamalla"></button>
+      <div class="detail" id="detail"></div>
+    </div>
+    <ol id="list" class="list" hidden></ol>
+  </section>
+
+  <section class="info">
+    <h2>Näin se toimii</h2>
+    <p>Valitse maa (selaimesta tunnistettu maa on valmiiksi valittuna), anna määrä ja napsauta Luo. Jokainen IBAN rakennetaan maan kansallisen muodon mukaan (pituus, pankin tunnus, konttorin tunnus, tilinumero), minkä jälkeen tarkisteet lasketaan: kansallinen silloin kun maa sellaista käyttää, ja IBANin kansainvälinen tarkiste (ISO 7064, mod 97-10). Tulos läpäisee IBAN-tarkistimet.</p>
+    <p>Käytetyt pankkitunnukset ovat aitoja: BNP Paribas, ING, Santander, Rabobank, UniCredit, Deutsche Bank. Se tekee IBANista uskottavan näköisen. Tilinumero sen sijaan arvotaan: mikään luotu IBAN ei vastaa olemassa olevaa tiliä.</p>
+
+    <h2>Euroopan unionin 27 maata</h2>
+    <p>Jokaisella maalla on oma IBAN-pituutensa ja oma tilirakenteensa:</p>
+    <ul class="countries">
+      <li><b>🇳🇱 Alankomaat</b><span>NL &middot; 18 merkkiä</span></li>
+      <li><b>🇧🇪 Belgia</b><span>BE &middot; 16 merkkiä</span></li>
+      <li><b>🇧🇬 Bulgaria</b><span>BG &middot; 22 merkkiä</span></li>
+      <li><b>🇪🇸 Espanja</b><span>ES &middot; 24 merkkiä</span></li>
+      <li><b>🇮🇪 Irlanti</b><span>IE &middot; 22 merkkiä</span></li>
+      <li><b>🇮🇹 Italia</b><span>IT &middot; 27 merkkiä</span></li>
+      <li><b>🇦🇹 Itävalta</b><span>AT &middot; 20 merkkiä</span></li>
+      <li><b>🇬🇷 Kreikka</b><span>GR &middot; 27 merkkiä</span></li>
+      <li><b>🇭🇷 Kroatia</b><span>HR &middot; 21 merkkiä</span></li>
+      <li><b>🇨🇾 Kypros</b><span>CY &middot; 28 merkkiä</span></li>
+      <li><b>🇱🇻 Latvia</b><span>LV &middot; 21 merkkiä</span></li>
+      <li><b>🇱🇹 Liettua</b><span>LT &middot; 20 merkkiä</span></li>
+      <li><b>🇱🇺 Luxemburg</b><span>LU &middot; 20 merkkiä</span></li>
+      <li><b>🇲🇹 Malta</b><span>MT &middot; 31 merkkiä</span></li>
+      <li><b>🇵🇹 Portugali</b><span>PT &middot; 25 merkkiä</span></li>
+      <li><b>🇵🇱 Puola</b><span>PL &middot; 28 merkkiä</span></li>
+      <li><b>🇫🇷 Ranska</b><span>FR &middot; 27 merkkiä</span></li>
+      <li><b>🇷🇴 Romania</b><span>RO &middot; 24 merkkiä</span></li>
+      <li><b>🇸🇪 Ruotsi</b><span>SE &middot; 24 merkkiä</span></li>
+      <li><b>🇩🇪 Saksa</b><span>DE &middot; 22 merkkiä</span></li>
+      <li><b>🇸🇰 Slovakia</b><span>SK &middot; 24 merkkiä</span></li>
+      <li><b>🇸🇮 Slovenia</b><span>SI &middot; 19 merkkiä</span></li>
+      <li><b>🇫🇮 Suomi</b><span>FI &middot; 18 merkkiä</span></li>
+      <li><b>🇩🇰 Tanska</b><span>DK &middot; 18 merkkiä</span></li>
+      <li><b>🇨🇿 Tšekki</b><span>CZ &middot; 24 merkkiä</span></li>
+      <li><b>🇭🇺 Unkari</b><span>HU &middot; 28 merkkiä</span></li>
+      <li><b>🇪🇪 Viro</b><span>EE &middot; 20 merkkiä</span></li>
+    </ul>
+
+    <h2>Usein kysyttyä</h2>
+    <h3>Ovatko luodut IBANit kelvollisia?</h3>
+    <p>Kyllä, rakenteeltaan. Jokainen IBAN noudattaa valitun maan kansallista muotoa (ISO 13616), kansainvälistä tarkistetta (ISO 7064, mod 97-10) sekä Belgian, Espanjan, Ranskan, Italian, Portugalin, Suomen, Slovenian ja Viron osalta myös kansallista tarkistetta.</p>
+    <h3>Vastaavatko ne oikeita pankkitilejä?</h3>
+    <p>Eivät. Pankin tunnus on aito, jotta muoto näyttää uskottavalta, mutta tilinumero on satunnainen. Mikään tilisiirto ei voi päätyä täällä luotuun IBANiin.</p>
+    <h3>Mihin IBAN-generaattoria tarvitaan?</h3>
+    <p>Testaamiseen: maksulomakkeet, validointisäännöt, SEPA-tiedostojen tuonnit, demo- tai testiaineistot. Luodun IBANin käyttäminen jonkun harhauttamiseen on petos ja laitonta.</p>
+    <h3>Lähetetäänkö tietojani jonnekin?</h3>
+    <p>Ei. Kaikki lasketaan selaimessasi JavaScriptillä. Ei palvelinta, ei seurantaa, ei mainoksia, ei rekisteröitymistä.</p>
+    <h3>Kuinka monta IBANia voi luoda kerralla?</h3>
+    <p>Enintään 1000 kerrallaan, vietävissä TXT- tai CSV-muotoon maan ja pankin kanssa.</p>
+  </section>
+
+  <footer class="foot">
+    <p><strong>Huomio:</strong> luodut IBANit noudattavat kansallista muotoa ja tarkistetta, mutta eivät vastaa mitään oikeaa pankkitiliä. Kaikenlainen vilpillinen käyttö on laitonta.</p>
+    <p class="tiny">Kaikki lasketaan selaimessasi. Mitään tietoja ei lähetetä. <a id="src" href="#" hidden>Lähdekoodi</a></p>
+    <nav class="langs" aria-label="Muut kielet">
+      <span>Muut kielet :</span> <a href="../cs/" hreflang="cs">Čeština</a> · <a href="../da/" hreflang="da">Dansk</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../et/" hreflang="et">Eesti</a> · <a href="../en/" hreflang="en">English</a> · <a href="../es/" hreflang="es">Español</a> · <a href=".././" hreflang="fr">Français</a> · <a href="../ga/" hreflang="ga">Gaeilge</a> · <a href="../hr/" hreflang="hr">Hrvatski</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../lv/" hreflang="lv">Latviešu</a> · <a href="../lt/" hreflang="lt">Lietuvių</a> · <a href="../hu/" hreflang="hu">Magyar</a> · <a href="../mt/" hreflang="mt">Malti</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt">Português</a> · <a href="../ro/" hreflang="ro">Română</a> · <a href="../sk/" hreflang="sk">Slovenčina</a> · <a href="../sl/" hreflang="sl">Slovenščina</a> · <a href="../sv/" hreflang="sv">Svenska</a> · <a href="../el/" hreflang="el">Ελληνικά</a> · <a href="../bg/" hreflang="bg">Български</a>
+    </nav>
+  </footer>
+
+</main>
+<div id="toast" class="toast" hidden></div>
+<script>window.__I18N={"lang":"fi","t":{"btnCopyAll":"Kopioi kaikki","btnCopyAllDone":"Kopioitu ✓","btnCopy":"kopioi","btnCopyDone":"kopioitu ✓","msgCopied":"IBAN kopioitu","msgCopiedMany":"{n} IBANia kopioitu","msgTxt":"Tiedosto .txt ladattu","msgCsv":"Tiedosto .csv ladattu","msgCopyFail":"Kopiointi epäonnistui","meta":"{n} IBAN, {country}, {len} merkkiä, kelvollinen tarkiste","detCountry":"Maa","detBank":"Pankki","detKey":"IBAN-tarkiste"},"countries":{"AT":"Itävalta","BE":"Belgia","BG":"Bulgaria","HR":"Kroatia","CY":"Kypros","CZ":"Tšekki","DK":"Tanska","EE":"Viro","FI":"Suomi","FR":"Ranska","DE":"Saksa","GR":"Kreikka","HU":"Unkari","IE":"Irlanti","IT":"Italia","LV":"Latvia","LT":"Liettua","LU":"Luxemburg","MT":"Malta","NL":"Alankomaat","PL":"Puola","PT":"Portugali","RO":"Romania","SK":"Slovakia","SI":"Slovenia","ES":"Espanja","SE":"Ruotsi"}}</script>
+<script src="../assets/iban.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>
