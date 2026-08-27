@@ -118,6 +118,7 @@ function page(lang) {
 <title>${esc(t.title)}</title>
 <meta name="description" content="${esc(t.desc)}">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="google-site-verification" content="KyxS6is7H66ceLlscfv1wjpOluMQRb_hMnqZj-p2hgc">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0b0d10">
 ${self ? `<link rel="canonical" href="${esc(self)}">` : ''}
