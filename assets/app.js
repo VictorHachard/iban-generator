@@ -199,6 +199,26 @@
     generate();
   });
 
+  var countriesList = document.querySelector('.countries');
+  if (countriesList) {
+    countriesList.addEventListener('click', function (e) {
+      var item = e.target.closest && e.target.closest('li[data-country]');
+      if (!item || !countriesList.contains(item)) return;
+      var code = item.getAttribute('data-country');
+      if (!IBAN.SPECS[code]) return;
+      countrySel.value = code;
+      generate();
+      countrySel.focus();
+    });
+    countriesList.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter' && e.key !== ' ') return;
+      var item = e.target.closest && e.target.closest('li[data-country]');
+      if (!item || !countriesList.contains(item)) return;
+      e.preventDefault();
+      item.click();
+    });
+  }
+
   ibanBig.addEventListener('click', function () {
     if (current[0]) copy(current[0].iban, T.msgCopied, [[ibanBig, null]]);
   });

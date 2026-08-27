@@ -54,7 +54,7 @@ function page(lang) {
   const countryList = CODES
     .slice()
     .sort((a, b) => names[a].localeCompare(names[b], lang))
-    .map(c => `      <li><b>${SPECS[c].flag} ${esc(names[c])}</b><span>${c} &middot; ${SPECS[c].length} ${esc(t.chars)}</span></li>`)
+    .map(c => `      <li data-country="${c}" tabindex="0"><b>${SPECS[c].flag} ${esc(names[c])}</b><span>${c} &middot; ${SPECS[c].length} ${esc(t.chars)}</span></li>`)
     .join('\n');
 
   const alternates = LANGS

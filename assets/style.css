@@ -164,8 +164,9 @@ select:focus,input:focus,button:focus-visible{outline:2px solid var(--accent);ou
 .countries li{
   display:flex;justify-content:space-between;align-items:baseline;gap:10px;
   background:var(--panel);border:1px solid var(--line);border-radius:8px;
-  padding:8px 12px;font-size:.85rem;
+  padding:8px 12px;font-size:.85rem;cursor:pointer;
 }
+.countries li:hover,.countries li:focus-visible{border-color:#405166;background:#151c25}
 .countries b{font-weight:500;color:var(--txt)}
 .countries span{color:var(--dim);font-size:.78rem;white-space:nowrap}
 
